@@ -1,0 +1,59 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.logodiv {
+    background-image: url(/WireLightBG.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    background: rgba(0,0,0,.8);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background: rgba(0,0,0,1);
+}
+.email {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: clamp(.8em, 5vw, 1.4em);
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+a:link {
+    color: white
+}
+a:visited {
+    color: yellow;
+}
+a:hover {
+    color: chartreuse;
+}
+a:active {
+    color: aquamarine;
+}
