@@ -4,7 +4,16 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow: clip;
+}
+
+body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .logodiv {
@@ -14,15 +23,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
 }
 
 .logo {
-    align-items: center;
-    justify-content: center;
     width: 80%;
-    max-width: 300px;
+    max-width: 400px;
     padding: 10px;
     background: rgba(0,0,0,.8);
 }
@@ -33,7 +40,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 10%;
     width: 100vw;
     background: rgba(0,0,0,1);
 }
