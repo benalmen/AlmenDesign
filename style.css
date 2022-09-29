@@ -56,10 +56,11 @@ footer {
     bottom: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 10vh;
     width: 100%;
-    background: rgba(0,0,0,.8);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
 }
 .email {
     font-family: 'Source Sans Pro', sans-serif;
@@ -68,8 +69,9 @@ footer {
     font-variant: small-caps;
     height: 50%;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 1vw;
     text-decoration: none;
+    white-space: pre;
 }
 
 a:link {
