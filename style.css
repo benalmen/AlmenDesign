@@ -8,7 +8,7 @@
 }
 
 .logodiv {
-    background-image: url("./docs/assets/images/wirelightbg.png");
+    background-image: url("wirelightbg.png");
     background-position: center;
     background-size: auto 100%;
     display: flex;
