@@ -9,29 +9,46 @@
 
 body {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
-.logodiv {
+/* size relative to view height */
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     background-image: url("./img/wirelightbg.png");
     background-position: center;
     background-size: auto 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
+    overflow: clip;
 }
 
-.logo {
-    width: 80%;
-    max-width: 400px;
+/* size relative to view height */
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 40vh;
+    width: 40vh;
     padding: 10px;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.7);
+}
+
+/* size relative to frame height % */
+.logo {
+    margin-top: -10%;
+    height: 60%; 
 }
 
 footer {
@@ -40,13 +57,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: 10vh;
     width: 100vw;
     background: rgba(0,0,0,1);
 }
 .email {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: clamp(.8em, 5vw, 1.4em);
+    font-size: 3vh;
+    /* font-size: clamp(.8rem, 5vw, 1.4em); */
     font-variant: small-caps;
     letter-spacing: 5px;
     text-decoration: none;
@@ -56,11 +74,11 @@ a:link {
     color: white
 }
 a:visited {
-    color: yellow;
+    color: mediumaquamarine;
 }
 a:hover {
-    color: chartreuse;
+    color: aquamarine;
 }
 a:active {
-    color: aquamarine;
+    color: gold;
 }
